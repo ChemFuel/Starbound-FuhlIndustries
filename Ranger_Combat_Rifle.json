@@ -107,12 +107,12 @@
         ],
         "price": 5000,
         "primaryAbility": {
-            "baseDps": 62.5,
+            "baseDps": 50,
             "class": "GunFire",
             "energyUsage": 62.5,
             "fireTime": 0.08,
             "fireType": "auto",
-            "inaccuracy": 0.025,
+            "inaccuracy": 0.03,
             "projectileCount": 1,
             "projectileParameters": {
                 "damageKind": "standardbullet",
@@ -120,7 +120,7 @@
             },
             "projectileType": "iceplasma",
             "scripts": [
-                "/items/active/weapons/ranged/abilities/altfire.lua"
+                "/items/active/weapons/ranged/abilities/gunfire.lua"
             ],
             "stances": {
                 "cooldown": {
@@ -146,6 +146,56 @@
                         0
                     ],
                     "weaponRotation": 3
+                },
+                "idle": {
+                    "allowFlip": true,
+                    "allowRotate": true,
+                    "armRotation": 0,
+                    "twoHanded": true,
+                    "weaponRotation": 0
+                }
+            }
+        },
+        "altAbility": {
+            "baseDps": 50,
+            "class": "GunFire",
+            "energyUsage": 62.5,
+            "fireTime": 1,
+            "fireType": "auto",
+            "inaccuracy": 0,
+            "projectileCount": 1,
+            "projectileParameters": {
+                "damageKind": "bow",
+                "knockback": 15
+            },
+            "projectileType": "spaceplasma",
+            "scripts": [
+                "/items/active/weapons/ranged/abilities/altfire.lua"
+            ],
+            "stances": {
+                "cooldown": {
+                    "allowFlip": true,
+                    "allowRotate": true,
+                    "armRotation": 3,
+                    "duration": 0.03,
+                    "twoHanded": true,
+                    "weaponOffset": [
+                        -0.25,
+                        0
+                    ],
+                    "weaponRotation": 6
+                },
+                "fire": {
+                    "allowFlip": true,
+                    "allowRotate": true,
+                    "armRotation": 3,
+                    "duration": 0,
+                    "twoHanded": true,
+                    "weaponOffset": [
+                        -0.25,
+                        0
+                    ],
+                    "weaponRotation": 6
                 },
                 "idle": {
                     "allowFlip": true,
